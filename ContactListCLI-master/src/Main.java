@@ -6,7 +6,7 @@ import java.lang.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        ContactList ellaContactList = new ContactList();
+        ContactList amarContactList = new ContactList();
         File contactFile = new File("ContactListCLI-master/contacts.txt");
         int function;
         String[] functionName = {"","LOAD_FROM_FILE","VIEW_CONTACTS", "ADD_CONTACT", "EDIT_CONTACT", "DELETE_CONTACT",
@@ -16,7 +16,7 @@ public class Main {
         do {
             displayMenu();
             function = getFunctionNumber();
-        } while (performFunction(functionName[function], ellaContactList, contactFile)); //run until quit (false)
+        } while (performFunction(functionName[function], amarContactList, contactFile)); //run until quit (false)
     }
 
     public static void checkOpenFile(File contactFile, String fileName) {
